@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HHYGiftCombo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sc-B8-RyD">
+                                <rect key="frame" x="0.0" y="582" width="375" height="85"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txU-JD-gaF">
+                                        <rect key="frame" x="187" y="27.5" width="40" height="30"/>
+                                        <state key="normal" title="礼物2"/>
+                                        <connections>
+                                            <action selector="gift2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Yl-KP-xXl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Au-w2-POV">
+                                        <rect key="frame" x="256" y="27.5" width="40" height="30"/>
+                                        <state key="normal" title="礼物3"/>
+                                        <connections>
+                                            <action selector="gift3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2er-Re-yK6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSq-0X-FIH">
+                                        <rect key="frame" x="57" y="27.5" width="38" height="30"/>
+                                        <state key="normal" title="礼物1"/>
+                                        <connections>
+                                            <action selector="gift1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTv-Uv-BrY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="9Au-w2-POV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="txU-JD-gaF" secondAttribute="trailing" constant="8" symbolic="YES" id="L20-lI-4f2"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Au-w2-POV" secondAttribute="trailing" constant="79" id="OHX-yh-0dx"/>
+                                    <constraint firstItem="DSq-0X-FIH" firstAttribute="baseline" secondItem="txU-JD-gaF" secondAttribute="baseline" id="Q1G-wV-3h1"/>
+                                    <constraint firstItem="txU-JD-gaF" firstAttribute="leading" secondItem="DSq-0X-FIH" secondAttribute="trailing" constant="92" id="Vmu-yE-5qZ"/>
+                                    <constraint firstItem="DSq-0X-FIH" firstAttribute="baseline" secondItem="9Au-w2-POV" secondAttribute="baseline" id="Z2o-mC-pIW"/>
+                                    <constraint firstAttribute="height" constant="85" id="eOT-MS-dfO"/>
+                                    <constraint firstItem="DSq-0X-FIH" firstAttribute="leading" secondItem="9sc-B8-RyD" secondAttribute="leading" constant="57" id="uK4-FY-Z5x"/>
+                                    <constraint firstItem="DSq-0X-FIH" firstAttribute="centerY" secondItem="9sc-B8-RyD" secondAttribute="centerY" id="y2G-9C-Inf"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGW-nR-OYt" customClass="HHYGiftDigitLabel" customModule="HHYGiftCombo" customModuleProvider="target">
+                                <rect key="frame" x="143" y="357" width="50" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="G8W-No-QTh"/>
+                                    <constraint firstAttribute="width" constant="50" id="k9v-ob-2A9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="9sc-B8-RyD" secondAttribute="bottom" id="M6r-J0-rGf"/>
+                            <constraint firstItem="AGW-nR-OYt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="357" id="OIo-Vz-SgM"/>
+                            <constraint firstItem="AGW-nR-OYt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="eD0-y2-Ouy"/>
+                            <constraint firstItem="9sc-B8-RyD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nF8-7y-8G2"/>
+                            <constraint firstAttribute="trailing" secondItem="9sc-B8-RyD" secondAttribute="trailing" id="qUP-Ma-lQx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="digitLabel" destination="AGW-nR-OYt" id="KK1-Ok-Rhn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="138.0809595202399"/>
+        </scene>
+    </scenes>
+</document>
